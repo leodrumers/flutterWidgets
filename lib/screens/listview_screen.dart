@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../themes/app_theme.dart';
+
 class ListviewScreen extends StatelessWidget {
   const ListviewScreen({Key? key}) : super(key: key);
 
@@ -13,19 +15,12 @@ class ListviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Listview #1'),
-        elevation: 0,
-        backgroundColor: Colors.deepPurple,
-      ),
+      appBar: AppBar(centerTitle: true, title: const Text('Listview #1')),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
           title: Text(options[index]),
-          trailing: const Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.deepPurple,
-          ),
+          trailing:
+              const Icon(Icons.arrow_forward_ios, color: AppTheme.primaryColor),
           onTap: () {
             final game = options[index];
             print(game);

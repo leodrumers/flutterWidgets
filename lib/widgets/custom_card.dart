@@ -12,7 +12,7 @@ class CustomCard extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          ListTile(
+          const ListTile(
             title: Text('My title'),
             leading: Icon(
               Icons.book_online_outlined,

@@ -1,3 +1,4 @@
+import 'package:components/screens/input_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/index.dart';
@@ -32,6 +33,11 @@ class AppRoutes {
         name: 'Animated Screen',
         screen: const AnimatedScreen(),
         icon: Icons.run_circle_outlined),
+    MenuOption(
+        route: 'inputs',
+        name: 'Input Screen',
+        screen: const InputScreen(),
+        icon: Icons.incomplete_circle),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

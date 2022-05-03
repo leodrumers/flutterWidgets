@@ -4,3 +4,4 @@ export 'package:components/screens/home_screen.dart';
 export 'package:components/screens/listview_screen.dart';
 export 'package:components/screens/avatar_screen.dart';
 export 'package:components/screens/animated_screen.dart';
+export 'package:components/screens/slider_screen.dart';

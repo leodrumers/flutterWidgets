@@ -21,7 +21,12 @@ class AppRoutes {
         route: 'listView',
         name: 'Listview Screen',
         screen: const ListviewScreen(),
-        icon: Icons.list)
+        icon: Icons.list),
+    MenuOption(
+        route: 'avatar',
+        name: 'Avatar Screen',
+        screen: const AvatarScreen(),
+        icon: Icons.supervised_user_circle_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

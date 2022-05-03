@@ -24,5 +24,20 @@ class AppTheme {
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           elevation: 0),
     ),
+    inputDecorationTheme: const InputDecorationTheme(
+      floatingLabelStyle: TextStyle(color: primaryColor),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primaryColor),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primaryColor),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      border: OutlineInputBorder(
+        borderSide: BorderSide(color: primaryColor),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+    ),
   );
 }

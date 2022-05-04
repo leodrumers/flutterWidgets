@@ -37,12 +37,17 @@ class AppRoutes {
         route: 'inputs',
         name: 'Input Screen',
         screen: const InputScreen(),
-        icon: Icons.incomplete_circle),
+        icon: Icons.incomplete_circle_outlined),
     MenuOption(
         route: 'slider',
         name: 'Slider Screen',
         screen: const SliderScreen(),
         icon: Icons.slideshow),
+    MenuOption(
+        route: 'listviewbuilder',
+        name: 'Listview Builder Screen',
+        screen: const ListViewBuilderScreen(),
+        icon: Icons.build_circle_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

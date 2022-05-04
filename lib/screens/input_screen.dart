@@ -73,10 +73,8 @@ class InputScreen extends StatelessWidget {
                   onPressed: () {
                     FocusScope.of(context).requestFocus(FocusNode());
                     if (!formKey.currentState!.validate()) {
-                      print('Form not valid');
                       return;
                     }
-                    print(formValues);
                   },
                   child: const SizedBox(
                     width: double.infinity,

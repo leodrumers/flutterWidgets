@@ -1,6 +1,8 @@
 import 'package:components/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/index.dart' show LoadingIcon;
+
 class ListViewBuilderScreen extends StatefulWidget {
   const ListViewBuilderScreen({Key? key}) : super(key: key);
 
@@ -93,30 +95,10 @@ class _ListViewBuilderScreenState extends State<ListViewBuilderScreen> {
               Positioned(
                 bottom: 40,
                 left: size.width * .5 - 30,
-                child: const _LoadingIcon(),
+                child: const LoadingIcon(),
               ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _LoadingIcon extends StatelessWidget {
-  const _LoadingIcon({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      height: 60,
-      width: 60,
-      decoration:
-          const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-      child: const CircularProgressIndicator(
-        color: AppTheme.primaryColor,
       ),
     );
   }
